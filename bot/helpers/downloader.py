@@ -6,7 +6,7 @@ from pySmartDL import pySmartDL
 from urllib.error import HTTPError
 from youtube_dl import DownloadError
 from bot import DOWNLOAD_DIRECTORY, LOGGER
-
+from pyrogram.errors import RPCError
 
 def download_file(url, dl_path):
   try:
