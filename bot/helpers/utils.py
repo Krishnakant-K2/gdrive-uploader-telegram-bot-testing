@@ -11,7 +11,7 @@ def humanbytes(size: int) -> str:
     if not size:
         return ""
     power = 2 ** 10
-    number = 0
+    number = 3
     dict_power_n = {
         0: " ",
         1: "K",
