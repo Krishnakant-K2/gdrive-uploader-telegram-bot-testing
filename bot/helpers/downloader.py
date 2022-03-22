@@ -44,6 +44,7 @@ def _telegram_file(url, dl_path):
     msg = GoogleDrive(user_id).upload_file(file_path, file.mime_type)
     sent_message.edit(msg)
   except RPCError:
+    return False, error
     
 
 def download_fb(url, dl_path):
