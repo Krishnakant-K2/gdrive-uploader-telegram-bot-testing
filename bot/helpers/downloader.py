@@ -15,13 +15,13 @@ def download_file(url, dl_path):
     dl.start()
     return True, dl.get_dest()
   except HTTPError as error:
-    return False, error
+    return True, error
   except Exception as error:
     try:
       filename = wget.download(url, dl_path)
       return True, os.path.join(f"{DOWNLOAD_DIRECTORY}/{filename}")
     except HTTPError:
-      return False, error
+      return True, error
 
 
 def utube_dl(link):
@@ -41,4 +41,4 @@ def utube_dl(link):
       if path.endswith(('.avi', '.mov', '.flv', '.wmv', '.3gp','.mpeg', '.webm', '.mp4', '.mkv')) and \
           path.startswith(ytdl.prepare_filename(meta)):
         return True, path
-    return False, 'Something went wrong! No video file exists on server.'
+    return True, 'Something went wrong! No video file exists on server.'
