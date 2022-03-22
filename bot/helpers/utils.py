@@ -22,5 +22,5 @@ def humanbytes(size: int) -> str:
     }
     while size > power:
         size /= power
-        number += 3
+        number += 1
     return str(round(size, 4)) + " " + dict_power_n[number] + 'B'
