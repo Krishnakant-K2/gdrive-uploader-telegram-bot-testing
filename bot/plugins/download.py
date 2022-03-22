@@ -63,7 +63,7 @@ def _telegram_file(client, message):
   sent_message.edit(Messages.DOWNLOAD_TG_FILE.format(file.file_name, humanbytes(file.file_size), file.mime_type))
   LOGGER.info(f'Download:{user_id}: {file.file_id}')
   try:
-    file_path = message.download(file_name=DOWNLOAD_DIRECTORY)
+    file_path = file.download(file_name=DOWNLOAD_DIRECTORY)
     sent_message.edit(Messages.DOWNLOADED_SUCCESSFULLY.format(os.path.basename(file_path), humanbytes(os.path.getsize(file_path))))
     msg = GoogleDrive(user_id).upload_file(file_path, file.mime_type)
     sent_message.edit(msg)
