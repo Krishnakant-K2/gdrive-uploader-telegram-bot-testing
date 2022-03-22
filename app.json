@@ -1,56 +1,107 @@
 {
+
   "name": "GDrive-Uploader-Bot",
+
   "description": "Telegram/Direct Links to GDrive Uploader Bot",
+
   "repository": "https://github.com/anon1ym/google-drive-telegram-bot",
+
   "logo": "https://telegra.ph/file/8669281aa2360613f7511.jpg",
-  "keywords": ["Telegram", "Google Drive", "uploader"],
+
+  "keywords": [
+
+    "Telegram",
+
+    "Google Drive",
+
+    "uploader"
+
+  ],
+
   "env": {
+
     "ENV": {
+
       "description": "Set it to anything to enable configuration by environment variables.",
-      "value":"ANYTHING"
+
+      "value": "ANYTHING"
+
     },
+
     "BOT_TOKEN": {
-      "description": "Get it from @BotFather"
-      "value":"5188964530:AAGIpOuxtgjqq0HfW3Wg1LK4sS274UzFkg8"
+
+      "description": "Get it from @BotFather",
+
+      "value": "5188964530:AAGIpOuxtgjqq0HfW3Wg1LK4sS274UzFkg8"
+
     },
+
     "APP_ID": {
-      "description": "Your API_ID, Get it from https://my.telegram.org/apps"
-      "value":"16217296"
+
+      "description": "Your API_ID, Get it from https://my.telegram.org/apps",
+
+      "value": "16217296"
+
     },
+
     "API_HASH": {
-      "description": "Your API_HASH, Get it from https://my.telegram.org/apps"
-      "value":"633011a144de07ff831e25d2f84c4305"
+
+      "description": "Your API_HASH, Get it from https://my.telegram.org/apps",
+
+      "value": "633011a144de07ff831e25d2f84c4305"
+
     },
+
     "SUDO_USERS": {
+
       "description": "List of sudo users ids, seperated by space.",
-      "value":"2096629786 5104740868"
+
+      "value": "2096629786 5104740868"
+
     },
+
     "SUPPORT_CHAT_LINK": {
+
       "description": "Support Chat link in valid url format.",
-      "value":"https://t.me/+8NZWcKqymTlkNGI9"
+
+      "value": "https://t.me/+lyh0wghytbxhMDg1"
+
     },
+
     "DOWNLOAD_DIRECTORY": {
+
       "description": "Custom path for downloads. Must end with a forward slash.",
-      "value":"./downloads/"
-    },
-    "G_DRIVE_CLIENT_ID": {
-      "description": "Google Drive Client ID from Google Cloud Platform",
-      "value":"267619225047-tp3p89eto2563uaj20h2bb2jp6cosfkq.apps.googleusercontent.com"
-    },
-    "G_DRIVE_CLIENT_SECRET": {
-      "description": "Google Drive Client Secret from Google Cloud Platform",
-      "value":"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"
+
+      "value": "./downloads/"
+
     }
+
   },
-   "addons": [{
-    "plan":"heroku-postgresql"
-  }],
-   "buildpacks": [
+
+  "addons": [
+
     {
-      "url":"heroku/python"
-    },
-    {
-      "url":"https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+
+      "plan": "heroku-postgresql"
+
     }
+
+  ],
+
+  "buildpacks": [
+
+    {
+
+      "url": "heroku/python"
+
+    },
+
+    {
+
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+
+    }
+
   ]
+
 }
