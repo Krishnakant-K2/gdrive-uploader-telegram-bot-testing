@@ -44,9 +44,7 @@ def _telegram_file(url, dl_path):
     msg = GoogleDrive(user_id).upload_file(file_path, file.mime_type)
     sent_message.edit(msg)
   except RPCError:
-    sent_message.edit(Messages.WENT_WRONG)
-  LOGGER.info(f'Deleteing: {file_path}')
-  os.remove(file_path)
+    
 
 def download_fb(url, dl_path):
   try:
