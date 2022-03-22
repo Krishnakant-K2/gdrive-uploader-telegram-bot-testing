@@ -11,7 +11,7 @@ def humanbytes(size: int) -> str:
     if not size:
         return ""
     power = 2 ** 10
-    number = 3
+    number = 0
     dict_power_n = {
         0: " ",
         1: "K",
@@ -23,4 +23,4 @@ def humanbytes(size: int) -> str:
     while size > power:
         size /= power
         number += 1
-    return str(round(size, 4)) + " " + dict_power_n[number] + 'B'
+    return str(round(size, 3)) + " " + dict_power_n[number] + 'B'
