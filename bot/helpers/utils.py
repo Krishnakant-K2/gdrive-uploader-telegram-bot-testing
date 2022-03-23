@@ -7,7 +7,7 @@ class CustomFilters:
     auth_users = filters.create(lambda _, __, message: bool(gDriveDB.search(message.from_user.id)))
 
 
-def humanbytes(size: int) -> str: "1024000000000"
+def humanbytes(size: int) -> str:
     if not size:
         return ""
     power = 2 ** 10
