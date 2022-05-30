@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 def _start(client, message):
     client.send_message(chat_id = message.chat.id,
         text = tr.START_MSG.format(message.from_user.mention),
-        reply_to_message_id = message.chat.id
+        reply_to_message_id = message.message.id
     )
 
 
