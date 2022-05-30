@@ -4,7 +4,7 @@
 
   "description": "Telegram/Direct Links to GDrive Uploader Bot",
 
-  "repository": "https://github.com/anon1ym/google-drive-telegram-bot",
+  "repository": "https://github.com/pk-628996/gdrive-uploader-telegram-bot",
 
   "logo": "https://telegra.ph/file/8669281aa2360613f7511.jpg",
 
@@ -32,19 +32,19 @@
 
       "description": "Get it from @BotFather",
 
-      "value": "5188964530:AAGIpOuxtgjqq0HfW3Wg1LK4sS274UzFkg8"
+      "value": ""
 
     },
     
     "G_DRIVE_CLIENT_ID": {
        
-      "value": "267619225047-2bc75vulq0hrf60lunhpt68ck9k7b315.apps.googleusercontent.com"
+      "value": ""
 
     },
   
     "G_DRIVE_CLIENT_SECRET": {
  
-      "value": "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"
+      "value": ""
 
     },
 
@@ -52,7 +52,7 @@
 
       "description": "Your API_ID, Get it from https://my.telegram.org/apps",
 
-      "value": "16217296"
+      "value": ""
 
     },
 
@@ -60,7 +60,7 @@
 
       "description": "Your API_HASH, Get it from https://my.telegram.org/apps",
 
-      "value": "633011a144de07ff831e25d2f84c4305"
+      "value": ""
 
     },
 
@@ -68,7 +68,7 @@
 
       "description": "List of sudo users ids, seperated by space.",
 
-      "value": "2096629786 5104740868"
+      "value": " "
 
     },
 
@@ -76,7 +76,7 @@
 
       "description": "Support Chat link in valid url format.",
 
-      "value": "https://t.me/+lyh0wghytbxhMDg1"
+      "value": ""
 
     },
 
